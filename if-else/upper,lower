@@ -1,0 +1,8 @@
+a=input()
+b=ord(a)
+if(a>=65 and a<=90):
+    print('upper')
+elif(a>=97 and a<=122):
+    print('lower')
+else:
+    print('invalid')
