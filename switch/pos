@@ -1,0 +1,8 @@
+a=int(input())
+match a:
+    case _ if(a>0):
+        print('positive')
+    case _ if(a<0):
+        print('negative')
+    case _:
+        print("zero")
