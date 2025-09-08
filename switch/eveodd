@@ -1,0 +1,7 @@
+a=int(input())
+match a:
+    case _ if(a%2==0):
+        print('even')
+    case _ if(a%2!=0):
+        print('odd')
+    
