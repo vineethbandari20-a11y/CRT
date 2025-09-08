@@ -1,0 +1,7 @@
+a=input()
+if a.isalpha():
+        print(" alphabet")
+    elif char_input.isdigit():
+        print("digit")
+    else:
+        print("special character")
