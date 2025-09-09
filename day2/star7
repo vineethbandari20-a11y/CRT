@@ -1,0 +1,13 @@
+p=0
+q=4
+for i in range(5):
+    for j in range(9):
+        if(i%4==0 and (j>=p and j<=q)):
+            print('*',end='')
+        elif(j==p or j==q):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+    p+=1
+    q+=1
