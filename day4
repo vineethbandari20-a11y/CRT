@@ -1,0 +1,126 @@
+1.sum of numbers in a number
+n=int(input())
+s=0
+while(n>10):
+    r=n%100
+    s+=r
+    n//=10
+print(s)
+
+2.product
+n=int(input())
+s=1
+while(n>0):
+    r=n%10
+    s*=r
+    n//=10
+print(s)
+
+3.n=5 5+4+3+2+1
+n=int(input())
+s=0
+while(n>0):
+    s+=n
+    n-=1
+print(s)
+
+4.n=5 5*4*3*2*1
+n=int(input())
+s=1
+while(n>0):
+    s*=n
+    n-=1
+print(s)
+
+5.base conv from one to other using 10 if not present
+n=int(input())
+gb=int(input())
+cb=int(input())
+a=n
+while(a>0):
+    r=a%10
+    if(r>=gb):
+        print('Invalid')
+        exit()
+    else:
+        pass
+    a//=10
+if(gb==10 or cb==10):
+    p=0
+    s=0
+    b=0
+    while(n>0):
+        r=n%cb
+        b=r*(gb**p)
+        n//=cb
+        p+=1
+        s+=b
+    print(s)
+elif(gb!=10 and cb!=10):
+    c=0
+    d=0
+    e=0
+    while(n>0):
+        r=n%10
+        b=r*(gb**d)
+        n//=10
+        d+=1
+        e+=b
+    f=0
+    g=0
+    h=0
+    while(e>0):
+        r=e%cb
+        f=r*(10**g)
+        e//=cb
+        g+=1
+        h+=f
+    print(h)
+
+highest digit conversion
+n=int(input())
+a=n
+b=0
+while(a!=0):
+    r=a%10
+    if(r>b):
+        b=r
+    a//=10
+c=0
+d=0
+e=0
+while(n>0):
+        r=n%b
+        c=r*(10**d)
+        n//=b
+        d+=1
+        e+=c
+f=e
+g=0
+while(f!=0):
+    r=f%10
+    g=(g*10)+r
+    f//=10
+h=0
+i=0
+j=0
+while(g>0):
+        r=g%10
+        h=r*(b**i)
+        g//=10
+        i+=1
+        j+=h
+print(j)
+
+
+n=int(input())
+a=0
+while(n!=0):
+    r=n%10
+    s=1
+    while(r!=0):
+        s*=r
+        r-=1
+    a+=s
+    n//=10
+print(a)
