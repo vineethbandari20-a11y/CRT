@@ -1,0 +1,109 @@
+1.factors
+n=int(input())
+print(1,end=' ')
+i=2
+while(i<=n//2):
+    if(n%i==0):
+        print(i,end=' ')
+    i+=1
+print(n)
+
+2.factor using sqrt
+import math
+n=int(input())
+for i in range(1,int(n**0.5)+1):
+    if(n%i==0):
+        print(i,end=' ')
+        q=n//i
+        if(q!=i):
+            print(q,end=' ')
+
+
+3.perfect square
+t=int(input())
+ps=0
+for i in range(t):
+    n=int(input())
+    for j in range(1,int(n**0.5)+1):
+        if(j*j==n):
+            ps+=1
+print(ps)
+print(t-ps)
+
+4.prime
+t=int(input())
+ps=0
+np=0
+for i in range(t):
+    c=0
+    n=int(input())
+    for j in range(2,(n//2)+1):
+        if(n%j==0):
+            c+=1
+    if(c>0):
+        np+=1
+    else:
+        ps+=1
+print(ps)
+print(np)
+
+5.range of number prime flag
+a=int(input())
+b=int(input())
+c=0
+for i in range(a,b+1):
+    for j in range(2,int(i**0.5)+1):
+        if(i%j==0):
+            c+=1
+            break
+print(c)
+
+6.prime digits
+n=int(input())
+a=[]
+c=[]
+b=[2,3,5,7]
+while(n!=0):
+    r=n%10
+    n//=10
+    if r in b:
+        a.append(r)
+    else:
+        c.append(r)
+d=min(a)
+e=max(c)
+s=1
+while(d>0):
+    s*=d
+    d-=1
+print(s)
+t=1
+while(e>0):
+    t*=e
+    e-=1
+print(t)
+print(len(a))
+print(len(c))
+
+7.series'
+n=int(input())
+a=2
+b=3
+c=0
+print(a,b,c,end=' ')
+for i in range(n-3):
+    d=a+b+c
+    print(d,end=' ')
+    a=b
+    b=c
+    c=d
+
+8.gcd
+a=int(input())
+b=int(input())
+while(b!=0):
+    r=a%b
+    a=b
+    b=r
+print(a)
+
